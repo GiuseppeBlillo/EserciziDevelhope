@@ -54,7 +54,7 @@ public class Main {
         String intStrToConvert = "5"; // Change this line
         System.out.println(Integer.valueOf(intStrToConvert));
 
-        String booleanStrToConvert = "maybe"; // And this line
+        String booleanStrToConvert = "true"; // And this line
         System.out.println(Boolean.valueOf(booleanStrToConvert));
 
         String doubleStrToConvert = "3.5"; // Also this line
