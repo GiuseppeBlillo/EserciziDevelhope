@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+
+
 public class Introduzione_esercizio16 {
     public static void main(String[] args) {
     exercise1();
@@ -61,7 +64,16 @@ public class Introduzione_esercizio16 {
      */
     public static void exercise3() {
         System.out.println("Exercise 3:");
+        myDate();
     }
-
+    private static void myDate() {
+        System.out.println("Today it's "+ LocalDate.now().getDayOfMonth()
+                +" day of the " + LocalDate.now().getMonthValue()
+                + " month of the year ("+ LocalDate.now().getMonth()
+                + ") and it is "+ LocalDate.now().getDayOfWeek()
+                + ". It is the " + LocalDate.now().getDayOfYear()
+                +" day of the year!");
+        System.out.println("We are after the First World War? " + LocalDate.now().isAfter(LocalDate.of(1914,07,28)));
+    }
 }
 
