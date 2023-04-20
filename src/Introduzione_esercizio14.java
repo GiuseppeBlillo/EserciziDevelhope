@@ -21,8 +21,9 @@ public class Introduzione_esercizio14 {
         double interestGainedThisYearEuros = 0;
 
         while (yearsPast <= 5 || currentInvestmentValueEuros <= 15_000) {
-            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
+            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
+            yearsPast++; //<----------- aggiunto incremento e corretta la "consegna"
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
@@ -71,16 +72,16 @@ public class Introduzione_esercizio14 {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:
+     * A1: while loop, for checking user actions
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2:
+     * A2: for each, because it's better and use all users, in this case, of the list without writing so much code
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3:
+     * A3: for i because you can set a limit
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4:
+     * A4: while loop again
      */
 }
 
