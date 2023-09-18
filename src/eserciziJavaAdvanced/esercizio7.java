@@ -1,3 +1,6 @@
+package eserciziJavaAdvanced;
+
+import eserciziJavaAdvanced.classiPerEsercizio7.Calcolatrice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

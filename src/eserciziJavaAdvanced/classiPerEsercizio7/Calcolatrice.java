@@ -1,3 +1,5 @@
+package eserciziJavaAdvanced.classiPerEsercizio7;
+
 public class Calcolatrice {
     public double add(double a, double b) {
         return a + b;
